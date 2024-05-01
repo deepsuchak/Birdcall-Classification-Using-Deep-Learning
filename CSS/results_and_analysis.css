@@ -1,0 +1,222 @@
+body {
+  /* background-image: url("../Images/team_bckgrd.jpg"); */
+  /* background-color: #fff6dc;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #e78919 12%, transparent 12.5%, transparent 87%, #e78919 87.5%, #e78919), linear-gradient(150deg, #e78919 12%, transparent 12.5%, transparent 87%, #e78919 87.5%, #e78919), linear-gradient(30deg, #e78919 12%, transparent 12.5%, transparent 87%, #e78919 87.5%, #e78919), linear-gradient(150deg, #e78919 12%, transparent 12.5%, transparent 87%, #e78919 87.5%, #e78919), linear-gradient(60deg, #e7891977 25%, transparent 25.5%, transparent 75%, #e7891977 75%, #e7891977), linear-gradient(60deg, #e7891977 25%, transparent 25.5%, transparent 75%, #e7891977 75%, #e7891977);
+  background-size: 30px 53px;
+  background-position: 0 0, 0 0, 15px 26px, 15px 26px, 0 0, 15px 26px; */
+  /* background: 
+    radial-gradient(farthest-side at -33.33% 50%, #0000 52%, rgba(10, 106, 64, 1) 54% 57%, #0000 59%),
+    radial-gradient(farthest-side at 50% 133.33%, #0000 52%, rgba(10, 106, 64, 1) 54% 57%, #0000 59%),
+    radial-gradient(farthest-side at 133.33% 50%, #0000 52%, rgba(10, 106, 64, 1) 54% 57%, #0000 59%) 0 100px,
+    radial-gradient(farthest-side at 50% -33.33%, #0000 52%, rgba(10, 106, 64, 1) 54% 57%, #0000 59%) 100px 0,
+    rgba(103, 145, 122, 1);
+  background-size: calc(200px * 3/14) 200px, 200px calc(200px * 3/14); */
+  background: repeating-conic-gradient(from 30deg, rgba(0, 0, 0, 0) 0 120deg, rgba(60, 60, 60, 1) 0 180deg)
+    calc(0.5 * 150px) calc(0.5 * 150px * 0.577),
+    repeating-conic-gradient(from 30deg, rgba(29, 29, 29, 1) 0 60deg, rgba(79, 79, 79, 1) 0 120deg, rgba(60, 60, 60, 1) 0 180deg);
+  background-size: 150px calc(150px * 0.577);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-content {
+ background-color: white;
+ margin: 50px auto;
+ width: 85%;
+ padding: 40px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ word-wrap: break-word;
+ overflow-wrap: break-word;
+ border: 2.5px solid black;
+ border-radius: 25px;
+ text-align: justify;
+}
+
+#submenu {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 75px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  height: 25px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a img {
+  height: 25px;
+  transform: rotate(0);
+  background-color: white;
+}
+
+.sidenav a:hover, .sidenav a:focus {
+  color: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 50px;
+}
+
+.navbar-icon {
+  position: fixed;
+  height: 45px;
+  margin: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-click {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: orange;
+  background-image: url("https://img.icons8.com/?size=80&id=111487&format=png");
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s;
+}
+
+.search-click:focus {
+  padding: 0px 25px;
+  background-image: none;
+}
+
+.search-click:not(:focus)::placeholder {
+  color: transparent;
+}
+
+.search-click:focus::placeholder {
+  color: #3c3c3c;
+}
+
+.search-click:not(:focus) {
+  color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  .search-click:focus {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .search-click:focus {
+    width: 75%;
+  }
+}
+
+.slide-down {
+  clear: both;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: height 0.5s ease;
+  display: none;
+}
+
+.slide-down li a {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.slide-down li {
+  content: ". ";
+  color: red;
+}
+
+#dataset-touch, #model-touch {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+#dataset-touch:checked + .slide-down,
+#model-touch:checked + .slide-down {
+  height: auto;
+  display: block;
+}
+
+.page-title {
+  padding-top: 50px;
+  font-family: 'GFS Didot', fantasy;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 5em;
+  color: blue;
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+
+.content-title {
+  font-family: "Comic Sans MS", sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  font-variant: small-caps;
+  padding-bottom: 15px;
+  font-size: 3em;
+  color: darkturquoise;
+  text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac, -1px -1px 0 #c6c23f;
+}
+
+.performance-results {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+
+.efficientnet-results {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+
+.validation-metrics table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.validation-metrics {
+  font-size: 1.5em;
+}
+
+.validation-metrics th, .validation-metrics td {
+  border: 2px solid #8d8d8d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.validation-metrics th {
+  background-color: rgb(126, 251, 224);
+}

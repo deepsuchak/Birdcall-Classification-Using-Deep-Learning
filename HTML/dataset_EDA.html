@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploratory Data Analysis</title>
+    <link href='https://fonts.googleapis.com/css?family=GFS Didot' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/dataset_EDA.css">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../index.html">Home</a>
+    <label for="dataset-touch"><a>Dataset</a></label>
+    <input type="checkbox" id="dataset-touch">
+    <ul class="slide-down">
+      <li><a href="dataset_overview.html">Overview</a></li>
+      <li><a href="dataset_EDA.html">Exploratory Data Analysis (EDA)</a></li>
+    </ul>
+    <label for="model-touch"><a>Models</a></label>
+    <input type="checkbox" id="model-touch">
+    <ul class="slide-down">
+      <li><a href="resnet_model.html">ResNet</a></li>
+      <li><a href="efficientnet_model.html">EfficientNet</a></li>
+      <li><a href="yamnet_model.html">YAMNet</a></li>
+    </ul>
+    <a href="results_and_analysis.html">Results and Analysis</a>
+    <a href="team.html">About Us</a>
+    </div>
+  <span onclick="openNav()"><img src="../Images/menu.png" class="navbar-icon"></span>
+  <div class="page-title"><span>Birdcall Classification<br>Using Deep Learning</span></div>
+  <div class="main-content">
+  <div class="content-title">Exploratory Data Analysis (EDA)</div>
+  <ol>
+    <li>
+        <p class="plot-title">Audio Files Registration per Year</p>
+        <p>Visualizes the yearly distribution of audio file registrations, unveiling trends and patterns in data collection over time.</p>
+        <img src="../Images/audio_files_per_year.png" alt="Audio Files Registration per Year">
+    </li>
+    <li>
+        <p class="plot-title">Audio Files Registration per Month</p>
+        <p>Illustrates the distribution of audio file registrations across different months, aiding in the detection of seasonal trends in data collection patterns.</p>
+        <img src="../Images/audio_files_per_month.png" alt="Audio Files Registration per Month">
+    </li>
+    <li>
+        <p class="plot-title">Pitch Distribution</p>
+        <p>Provides insights into the variety and spread of pitch values within the dataset, offering a glimpse into the acoustic characteristics of the recordings.</p>
+        <img src="../Images/pitch_distribution.png" alt="Pitch Distribution">
+    </li>
+    <li>
+        <p class="plot-title">Top 15 Elevation Types</p>
+        <p>Highlights the most prevalent elevation types within the dataset, shedding light on habitat characteristics and their distribution.</p>
+        <img src="../Images/top_elevation_types.png" alt="Top 15 Elevation Types">
+    </li>
+    <li>
+        <p class="plot-title">Recordings Duration</p>
+        <p>Reveals the distribution of audio recording durations, providing insights into the length of audio clips present in the dataset.</p>
+        <img src="../Images/recordings_duration.png" alt="Recordings Duration">
+    </li>
+    <li>
+        <p class="plot-title">Sampling Rate Distribution</p>
+        <p>Showcases the distribution of sampling rates, offering insights into the quality and characteristics of audio recordings in the dataset.</p>
+        <img src="../Images/sampling_rate_distribution.png" alt="Sampling Rate Distribution">
+    </li>
+    <li>
+        <p class="plot-title">Country Distribution</p>
+        <p>Displays the geographical representation of recordings across different countries within the dataset, providing insights into global coverage.</p>      
+        <img src="../Images/country_distribution.png" alt="Country Distribution of Recordings">
+    </li>
+    <li>
+        <p class="plot-title">Recordist Distribution</p>
+        <p>Offers insights into recording distribution by various recordists, indicating levels of engagement and contribution within the dataset.</p>
+        <img src="../Images/recordist_distribution.png" alt="Recordist Distribution">
+    </li>
+  </ol>  
+  </div>
+  <script src="../JS/index_script.js"></script>
+</body>
+</html>

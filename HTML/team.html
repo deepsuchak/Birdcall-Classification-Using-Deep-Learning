@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Team</title>
+  <link rel="stylesheet" href="../CSS/team_style.css">
+  <link rel="stylesheet" href="../CSS/index_style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap">
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <label for="dataset-touch"><a>Dataset</a></label>
+  <input type="checkbox" id="dataset-touch">
+  <ul class="slide-down">
+    <li><a href="dataset_overview.html">Overview</a></li>
+    <li><a href="dataset_EDA.html">Exploratory Data Analysis (EDA)</a></li>
+  </ul>
+  <label for="model-touch"><a>Models</a></label>
+  <input type="checkbox" id="model-touch">
+  <ul class="slide-down">
+    <li><a href="resnet_model.html">ResNet</a></li>
+    <li><a href="efficientnet_model.html">EfficientNet</a></li>
+    <li><a href="yamnet_model.html">YAMNet</a></li>
+  </ul>
+  <a href="results_and_analysis.html">Results and Analysis</a>
+  <a href="team.html">About Us</a>
+  </div>
+  <span onclick="openNav()"><img src="../Images/menu.png" class="navbar-icon"></span>
+  <div id="main">
+    <section class="meet-the-team">
+      <div class="team-title"><span>Meet The Team</span></div>
+      <div class="team-grid">
+      <div class="team-member">
+        <center>
+        <img src="../Images/rahul.jpg" alt="Rahul Chhatbar" class="profile_image">
+        <p class="team-member-name">Rahul Chhatbar</p>
+        <p style="font-size: 15px;">Master of Science<br>in Computer Science</p>
+        <a href="mailto:rachhatbar@wpi.edu"><button class="email_send"><img src="../Images/outlook_logo.png" alt="Send Email"></button></a>
+        </center>
+      </div>
+      <div class="team-member">
+        <center>
+        <img src="../Images/sonu.jpg" alt="Sonu Tejwani" class="profile_image">
+        <p class="team-member-name">Sonu Tejwani</p>
+        <p style="font-size: 15px">Master of Science<br>in Computer Science</p>
+        <a href="mailto:stejwani@wpi.edu"><button class="email_send"><img src="../Images/outlook_logo.png" alt="Send Email"></button></a>
+        </center>
+      </div>
+      <div class="team-member">
+        <center>
+        <img src="../Images/deep.jpg" alt="Deep Suchak" class="profile_image">
+        <p class="team-member-name">Deep Suchak</p>
+        <p style="font-size: 15px">Master of Science<br>in Data Science</p>
+        <a href="mailto:dsuchak@wpi.edu"><button class="email_send"><img src="../Images/outlook_logo.png" alt="Send Email"></button></a>
+        </center>
+      </div>
+      <div class="team-member">
+        <center>
+        <img src="../Images/shoan.jpg" alt="Shoan Bhatambare" class="profile_image">
+        <p class="team-member-name">Shoan Bhatambare</p>
+        <p style="font-size: 15px">Master of Science<br>in Computer Science</p>
+        <a href="mailto:sbhatambare@wpi.edu"><button class="email_send"><img src="../Images/outlook_logo.png" alt="Send Email"></button></a>
+        </center>
+      </div>
+    </div>
+    </section>    
+  </div>
+  <script src="../JS/index_script.js"></script>
+</body>
+</html>

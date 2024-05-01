@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=GFS Didot' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/index_style.css">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <label for="dataset-touch"><a>Dataset</a></label>
+    <input type="checkbox" id="dataset-touch">
+    <ul class="slide-down">
+      <li><a href="HTML/dataset_overview.html">Overview</a></li>
+      <li><a href="HTML/dataset_EDA.html">Exploratory Data Analysis (EDA)</a></li>
+    </ul>
+    <label for="model-touch"><a>Models</a></label>
+    <input type="checkbox" id="model-touch">
+    <ul class="slide-down">
+      <li><a href="HTML/resnet_model.html">ResNet</a></li>
+      <li><a href="HTML/efficientnet_model.html">EfficientNet</a></li>
+      <li><a href="HTML/yamnet_model.html">YAMNet</a></li>
+    </ul>
+    <a href="HTML/results_and_analysis.html">Results and Analysis</a>
+    <a href="HTML/team.html">About Us</a>
+  </div>
+  <span onclick="openNav()"><img src="Images/menu.png" class="navbar-icon"></span>
+  <div class="page-title"><span>Birdcall Classification<br>Using Deep Learning</span></div>
+  <div class="main-content">
+    <div class="content-title">Project Motivation</div>
+    <div class="bird-homepage">
+      <div class="bird-text">
+        <!-- <p>Do you hear the birds chirping outside your window? Over 10,000 bird species occur in the world, and they can be found in nearly every environment, from untouched rainforests to suburbs and even cities. Birds play an essential role in nature. They are high up in the food chain and integrate changes occurring at lower levels. As such, birds are excellent indicators of deteriorating habitat quality and environmental pollution. However, it is often easier to hear birds than see them. With proper sound detection and classification, researchers could automatically intuit factors about an area’s quality of life based on a changing bird population.</p> -->
+        <!-- <p>There are already many projects underway to extensively monitor birds by continuously recording natural soundscapes over long periods. However, as many living and nonliving things make noise, the analysis of these datasets is often done manually by domain experts. These analyses are painstakingly slow, and results are often incomplete. Data science may be able to assist, so researchers have turned to large crowdsourced databases of focal recordings of birds to train AI models. Unfortunately, there is a domain mismatch between the training data (short recording of individual birds) and the soundscape recordings (long recordings with often multiple species calling at the same time) used in monitoring applications. This is one of the reasons why the performance of the currently used AI models has been subpar.</p> -->
+        <p>Birds are integral components of ecosystems, serving as indicators of environmental health and contributing
+          to ecosystem services such as pollination and pest control. However, bird populations worldwide face
+          numerous threats, including habitat destruction, climate change, pollution, and predation. Effective
+          conservation efforts require accurate monitoring of bird populations to assess population trends, identify
+          habitat preferences, and prioritize conservation actions. Traditional methods of bird monitoring, relying on
+          visual observation, are time-consuming, labor-intensive, and often impractical in dense forests or remote
+          areas. Consequently, there is a critical need for automated birdcall recognition tools capable of identifying
+          bird species from audio recordings.</p>
+          <p>There are already many projects underway to extensively monitor birds by continuously recording natural soundscapes over long periods. However, as many living and nonliving things make noise, the analysis of these datasets is often done manually by domain experts. These analyses are painstakingly slow, and results are often incomplete. Data science may be able to assist, so researchers have turned to large crowdsourced databases of focal recordings of birds to train AI models. Unfortunately, there is a domain mismatch between the training data and the soundscape recordings used in monitoring applications. This is one of the reasons why the performance of the currently used AI models has been subpar.
+
+          </p>
+      </div>
+      <div><img src="Images/bird_homepage.png" alt="Bird Image" class="bird-image-homepage"></div>
+    </div>
+  </div>
+  <script src="JS/index_script.js"></script>
+</body>
+</html>
